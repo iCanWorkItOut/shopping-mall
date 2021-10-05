@@ -18,7 +18,7 @@
     <meta property="og:title" content="Pocachip's portfolio" />
     <meta property="og:description" content="Board game shopping mall Website" />
     <meta property="og:image" content="img/og__thumbnail.jpg" />
-    <meta property="og:url" content="http://192.168.219.103:5500/index.html" />
+    <meta property="og:url" content="" />
 
     <!-- 트위터카드 -->
     <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
@@ -27,7 +27,7 @@
     <meta property="twitter:title" content="Pocachip's portfolio" />
     <meta property="twitter:description" content="Board game shopping mall Website" />
     <meta property="twitter:image" content="img/og__thumbnail.jpg" />
-    <meta property="twitter:url" content="http://192.168.219.103:5500/index.html" />
+    <meta property="twitter:url" content="" />
 
     <!-- 파비콘 -->
     <link rel="icon" href="img/favicon.png" />
@@ -36,12 +36,81 @@
     <!-- 스마트폰에서 적용 -->
     <link rel="apple-touch-icon" href="img/favicon.png" />
 
+    <!-- 구글폰트 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
     <!-- CSS -->
     <!-- 브라우저 스타일 초기화(Reset) : reset.css 파일 대체 -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
     />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="body__container">
+      <!-- HEADER
+      <header id="header" class="section">
+        <div class="inner--big clearfix">
+          <div class="gnb float--left">
+            <div class="logo">
+              <a href="#">럭키다이스</a>
+            </div>
+            <div class="test">afdaf</div>
+          </div>
+        </div>
+      </header> -->
+      <!-- HEADER -->
+      <header id="header" class="section">
+        <div class="inner--big clearfix">
+          <div class="gnb float--left">
+            <div class="logo">
+              <a href="#">럭키다이스</a>
+            </div>
+            <ul class="gnb__product-menu">
+              <li><a href="#" class="cartegory">카테고리</a></li>
+              <li><a href="#" class="new-product">신상품</a></li>
+              <li><a href="#" class="popular-product">인기상품</a></li>
+              <li><a href="#" class="award-winning">수상작</a></li>
+            </ul>
+            <ul class="gnb__bulletin-board">
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </div>
+
+          <div class="gnb__member-menu float--right">
+            <ul id="member-menu" class="login-logout">
+              <li><a href="#" class="menu--logout login">로그인</a></li>
+              <li><a href="#" class="menu--logout sign-up">회원가입</a></li>
+              <li><a href="#" class="menu--login hidden logout">로그아웃</a></li>
+              <li><a href="#" class="customer-service">고객센터</a></li>
+              <li><a href="#" class="shopping-basket" title="장바구니"></a></li>
+              <li><a href="#" class="my-page" title="마이페이지"></a></li>
+            </ul>
+            <form id="search-form" method="POST" action="">
+              <input
+                type="text"
+                id="search"
+                class="input--text"
+                placeholder="어떤 보드게임을 찾고 계세요?"
+              />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>
