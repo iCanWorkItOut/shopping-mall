@@ -49,6 +49,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
+
     <!-- CSS -->
     <!-- 브라우저 스타일 초기화(Reset) : reset.css 파일 대체 -->
     <link
@@ -60,24 +61,14 @@
 
   <body>
     <div class="body__container">
-      <!-- HEADER
-      <header id="header" class="section">
-        <div class="inner--big clearfix">
-          <div class="gnb float--left">
-            <div class="logo">
-              <a href="#">럭키다이스</a>
-            </div>
-            <div class="test">afdaf</div>
-          </div>
-        </div>
-      </header> -->
       <!-- HEADER -->
       <header id="header" class="section">
         <div class="inner--big clearfix">
-          <div class="gnb float--left">
+          <nav class="gnb float--left">
             <div class="logo">
               <a href="">럭키다이스</a>
             </div>
+
             <ul class="gnb__product">
               <li>
                 <div class="product-menu dropdown">
@@ -93,6 +84,7 @@
               <li><a href="#" class="product-menu popular-product">인기상품</a></li>
               <li><a href="#" class="product-menu award-winning">수상작</a></li>
             </ul>
+
             <ul class="gnb__bulletin-board">
               <li>
                 <div class="bbs dropdown">
@@ -112,17 +104,18 @@
 
               <li><a href="#" class="bbs noitce">공지사항</a></li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="gnb__member-menu float--right">
-            <ul id="member-menu" class="login-logout">
-              <li><a href="#" class="menu--logout login">로그인</a></li>
-              <li><a href="#" class="menu--logout sign-up">회원가입</a></li>
-              <li><a href="#" class="menu--login hidden logout">로그아웃</a></li>
-              <li><a href="#" class="customer-service">고객센터</a></li>
-              <li><a href="#" class="shopping-basket" title="장바구니"></a></li>
-              <li><a href="#" class="my-page" title="마이페이지"></a></li>
+          <nav class="gnb float--right">
+            <ul id="member-menu" class="gnb__member-menu">
+              <li><a href="#" class="member-menu--logout login">로그인</a></li>
+              <li><a href="#" class="member-menu--logout sign-up">회원가입</a></li>
+              <li><a href="#" class="member-menu--login logout hidden">로그아웃</a></li>
+              <li><a href="#" class="member-menu customer-service">고객센터</a></li>
+              <li><a href="#" class="member-menu shopping-basket" title="장바구니"></a></li>
+              <li><a href="#" class="member-menu my-page" title="마이페이지"></a></li>
             </ul>
+
             <form id="search-form" method="POST" action="">
               <input
                 type="text"
@@ -132,9 +125,19 @@
               />
               <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-          </div>
+          </nav>
         </div>
       </header>
+
+      <!-- Main -->
+      <!-- slide banner -->
+      <section class="section main-banner">
+        <ul class="slide-container">
+          <li>
+            <a href="#"><img src="img/banner/9.jpg" alt="디센트" /></a>
+          </li>
+        </ul>
+      </section>
     </div>
   </body>
 </html>
