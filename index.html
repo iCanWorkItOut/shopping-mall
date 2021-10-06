@@ -45,24 +45,24 @@
     />
 
     <!-- Font Awesome 5 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- CSS -->
     <!-- 브라우저 스타일 초기화(Reset) : reset.css 파일 대체 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Script -->
   </head>
 
   <body>
     <div class="body__container">
       <!-- HEADER -->
-      <header id="header" class="section">
+      <!-- <header id="header" class="section">
         <div class="inner--big clearfix">
           <nav class="gnb float--left">
             <div class="logo">
@@ -88,7 +88,6 @@
             <ul class="gnb__bulletin-board">
               <li>
                 <div class="bbs dropdown">
-                  <!-- <a href="#" class="bbs community">커뮤니티</a> -->
                   <span class="community">커뮤니티</span>
                   <ul class="lnb__bbs dropdown-content">
                     <a href="#"> <li>전체</li> </a>
@@ -117,16 +116,54 @@
             </ul>
 
             <form id="search-form" method="POST" action="">
-              <input
-                type="text"
-                id="search"
-                class="input--text"
-                placeholder="어떤 보드게임을 찾고 계세요?"
-              />
+              <input type="text" id="search" class="input--text" placeholder="어떤 보드게임을 찾고 계세요?" />
               <button type="submit"><i class="fas fa-search"></i></button>
             </form>
           </nav>
         </div>
-      </header>
+      </header> -->
+
+      <!-- MAIN -->
+      <!-- main banner (Swiper 사용)-->
+      <section class="section main-banner">
+        <div class="swiper-container swiper-container--main-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="img/banner/9.jpg" alt="'디센트' 이미지를 지원하지 않습니다." /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/banner/8.jpg" alt="'오쓰' 이미지를 지원하지 않습니다." /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/banner/7.jpg" alt="'아컴 호러' 이미지를 지원하지 않습니다." /></a>
+            </div>
+            <!-- <div class="swiper-slide">
+              <a href="#"><img src="img/banner/6.jpg" alt="'카르카손' 이미지를 지원하지 않습니다." /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/banner/5.jpg" alt="'카탄' 이미지를 지원하지 않습니다." /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/banner/4.jpg" alt="'테라포밍 마스' 이미지를 지원하지 않습니다." /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/banner/3.jpg" alt="'사이드' 이미지를 지원하지 않습니다." /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/banner/2.jpg" alt="'반지의 제왕' 이미지를 지원하지 않습니다." /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/banner/1.jpg" alt="'광기의 저택' 이미지를 지원하지 않습니다." /></a>
+            </div> -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- <a class="prev" onclick="">&#10094;</a>
+            <a class="next" onclick="">&#10095;</a> -->
+        </div>
+      </section>
+    </div>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
