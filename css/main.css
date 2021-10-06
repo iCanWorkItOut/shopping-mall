@@ -169,7 +169,7 @@ header .gnb__member-menu {
   font-size: 14px;
 }
 #member-menu {
-  /* order: 2; */
+  order: 2;
   display: flex;
   margin-left: 20px;
   align-items: center;
@@ -199,7 +199,7 @@ header .gnb__member-menu {
 
 /* search-form */
 #search-form {
-  /* order: 1; */
+  order: 1;
   margin-right: 12px;
   border-radius: 50px;
   width: 300px;
