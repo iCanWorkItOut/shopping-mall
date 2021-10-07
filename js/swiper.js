@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper-container--main-banner', {
   slidesPerView: 1, // 한 화면에 들어오는 슬라이드 갯수
   spaceBetween: 0, // 슬라이드 간 여백
   debugger: true, // 드래그로 슬라이드 이동
-  mousewheel: true,
+  // mousewheel: true,
   loop: true,
   // loopAdditionalSlides: 1, // loop 생성 후 복제할 슬라이드 수 추가
   effect: 'fade', // 슬라이드 이동 효과 'slide', 'fade'
