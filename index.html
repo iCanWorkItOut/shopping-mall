@@ -48,8 +48,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="library/swiper-bundle.min.css" />
+    <script defer src="library/swiper-bundle.min.js"></script>
 
     <!-- CSS -->
     <!-- 브라우저 스타일 초기화(Reset) : reset.css 파일 대체 -->
@@ -57,12 +57,13 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <!-- Script -->
+    <script defer src="js/swiper.js"></script>
   </head>
 
   <body>
     <div class="body__container">
       <!-- HEADER -->
-      <!-- <header id="header" class="section">
+      <header id="header" class="section">
         <div class="inner--big clearfix">
           <nav class="gnb float--left">
             <div class="logo">
@@ -121,49 +122,49 @@
             </form>
           </nav>
         </div>
-      </header> -->
+      </header>
 
       <!-- MAIN -->
       <!-- main banner (Swiper 사용)-->
       <section class="section main-banner">
         <div class="swiper-container swiper-container--main-banner">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
               <a href="#"><img src="img/banner/9.jpg" alt="'디센트' 이미지를 지원하지 않습니다." /></a>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <a href="#"><img src="img/banner/8.jpg" alt="'오쓰' 이미지를 지원하지 않습니다." /></a>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <a href="#"><img src="img/banner/7.jpg" alt="'아컴 호러' 이미지를 지원하지 않습니다." /></a>
-            </div>
-            <!-- <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <a href="#"><img src="img/banner/6.jpg" alt="'카르카손' 이미지를 지원하지 않습니다." /></a>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <a href="#"><img src="img/banner/5.jpg" alt="'카탄' 이미지를 지원하지 않습니다." /></a>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <a href="#"><img src="img/banner/4.jpg" alt="'테라포밍 마스' 이미지를 지원하지 않습니다." /></a>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <a href="#"><img src="img/banner/3.jpg" alt="'사이드' 이미지를 지원하지 않습니다." /></a>
-            </div>
-            <div class="swiper-slide">
+            </li>
+            <li class="swiper-slide">
               <a href="#"><img src="img/banner/2.jpg" alt="'반지의 제왕' 이미지를 지원하지 않습니다." /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="img/banner/1.jpg" alt="'광기의 저택' 이미지를 지원하지 않습니다." /></a>
-            </div> -->
-          </div>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/1.jpg" alt="'서스펙트 게임' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/0.jpg" alt="'광기의 저택' 이미지를 지원하지 않습니다." /></a>
+            </li>
+          </ul>
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-          <!-- <a class="prev" onclick="">&#10094;</a>
-            <a class="next" onclick="">&#10095;</a> -->
         </div>
       </section>
     </div>
-    <script src="js/swiper.js"></script>
   </body>
 </html>
