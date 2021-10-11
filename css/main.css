@@ -1,16 +1,18 @@
 /* COMMON */
-/* font-size
-maximum 32px
-lager 20px
-large 18px
-medium 16px 
-small 14px
-smaller 13px
-minimum 12px
- */
-/* color
- text #333
-  */
+:root {
+  /* font-size */
+  --font-maximum: 32px;
+  --font-larger: 20px;
+  --font-large: 18px;
+  --font-medium: 16px;
+  --font-small: 14px;
+  --font-smaller: 13px;
+  --font-minimum: 12px;
+
+  /* color */
+  --text-color: #333;
+  --background-color: #f2f2f2;
+}
 
 /* float clearfix */
 .clearfix::after {
@@ -41,10 +43,10 @@ minimum 12px
   display: none;
   position: absolute;
   top: 90%;
-  min-width: 110px;
+  min-width: 115px;
   border-radius: 5px;
   padding: 10px 0;
-  background-color: #eee;
+  background-color: var(--background-color);
   border: 1px solid #000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -53,8 +55,8 @@ minimum 12px
 }
 .dropdown-content li {
   padding: 12px 8px;
-  font-size: 16px;
-  color: #333;
+  font-size: var(--font-medium);
+  color: var(--text-color);
 }
 .dropdown-content li:last-child {
   margin-bottom: 0;
@@ -70,9 +72,9 @@ minimum 12px
   position: relative;
   box-sizing: border-box;
   font-family: 'Jost', 'NotoSansKR', sans-serif;
-  font-size: 16px;
+  font-size: var(--font-medium);
   font-weight: 400;
-  color: #333;
+  color: var(--text-color);
 }
 a {
   text-decoration: none;
@@ -94,8 +96,8 @@ a {
 #header.fixed--top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-  font-size: 20px;
-  background: #eee;
+  font-size: var(--font-larger);
+  background: var(--background-color);
   position: fixed !important;
   width: 100%;
   z-index: 9999;
@@ -133,7 +135,7 @@ header .gnb__product .product-menu {
   align-items: center;
   padding: 0 20px;
   font-weight: 700;
-  color: #333;
+  color: var(--text-color);
 }
 header .gnb__product .category {
   cursor: default;
@@ -153,7 +155,7 @@ header .gnb__bulletin-board .bbs {
   height: 50px;
   align-items: center;
   padding: 0 15px;
-  color: #333;
+  color: var(--text-color);
 }
 header .gnb__bulletin-board .lnb__bbs {
   font-weight: 700;
@@ -167,7 +169,7 @@ header .gnb__member-menu {
   display: flex;
   height: 100%;
   align-items: center;
-  font-size: 14px;
+  font-size: var(--font-small);
 }
 #member-menu {
   order: 2;
@@ -216,7 +218,7 @@ header .gnb__member-menu {
   padding-left: 20px;
   width: 80%;
   height: 90%;
-  font-size: 13px;
+  font-size: var(--font-smaller);
 }
 #search:focus {
   outline: none;
@@ -231,11 +233,12 @@ header .gnb__member-menu {
 /* common--main */
 #main {
   /* padding-top: 78px; */
-  background-color: #f2f2f2;
+  background-color: var(--background-color);
 }
+
+/* main banner (swiper) */
 main .main-banner {
 }
-/* main banner (swiper) */
 main .main-banner .swiper-container {
   width: 100%;
   height: 580px;
@@ -278,9 +281,10 @@ main .main-banner .swiper-button-next:hover {
 
 /* notice */
 main .notice {
+  font-size: var(--font-maximum);
 }
 main .notice .inner--small {
   background-color: #fff;
   height: 660px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
