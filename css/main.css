@@ -80,9 +80,6 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
-a:hover {
-  color: #000;
-}
 
 /* inner */
 .inner--big {
@@ -240,21 +237,26 @@ header .gnb__member-menu {
   /* padding-top: 78px; */
   background-color: var(--background-color);
 }
-main p.title {
+main .inner--small > p.title {
   position: relative;
+  margin-top: 70px;
+  margin-bottom: 30px;
   font-size: var(--font-maximum);
   line-height: 1.2;
 }
-main p.title strong {
+main .inner--small > p.title strong {
   font-weight: bold;
   color: #f00;
 }
-main p.title a {
+main .inner--small > p.title a {
   position: absolute;
   right: 0;
   bottom: 0;
   font-size: var(--font-small);
   font-weight: bold;
+}
+main .inner--small > p.title a:hover {
+  color: #000;
 }
 
 /* main banner (swiper) */
@@ -302,11 +304,54 @@ main .main-banner .swiper-button-next:hover {
 
 /* notice */
 main .notice {
-  font-size: var(--font-medium);
-  padding: 80px 0 40px;
-  background-color: teal;
+  padding-bottom: 30px;
 }
 main .notice .inner--small {
-  background-color: tomato;
-  height: 660px;
+  overflow: hidden;
+}
+main .notice .noti-box {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 48.75%);
+  grid-template-rows: repeat(2, 180px);
+  column-gap: 2.5%;
+  row-gap: 30px;
+}
+main .notice .noti-box .noti-box__item {
+  font-size: var(--font-medium);
+  background-color: #fff;
+}
+main .notice .noti-box__item a {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 30% 70%;
+}
+main .notice .noti-box__item a .noti-img {
+  display: flex;
+  align-items: center;
+}
+main .notice .noti-box__item a .noti-img img {
+  width: 100%;
+  height: 100%;
+}
+main .notice .noti-box__item a .noti-img img.noti-img--default {
+  width: 100%;
+  height: 80%;
+}
+main .notice .noti-box__item a .noti-info {
+  padding: 10% 7%;
+}
+main .notice .noti-info .noti-title {
+  margin-bottom: 5%;
+  color: #000;
+  font-weight: bold;
+}
+main .notice .noti-info .noti-date {
+  font-size: var(--font-small);
+}
+main .notice .noti-info .noti-date::before {
+  content: '공지사항';
+  margin-right: 10px;
+  font-size: var(--font-small);
+  color: #f00;
 }
