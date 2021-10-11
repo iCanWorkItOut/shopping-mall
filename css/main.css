@@ -78,7 +78,12 @@
 }
 a {
   text-decoration: none;
+  color: var(--text-color);
 }
+a:hover {
+  color: #000;
+}
+
 /* inner */
 .inner--big {
   max-width: 1415px;
@@ -235,6 +240,22 @@ header .gnb__member-menu {
   /* padding-top: 78px; */
   background-color: var(--background-color);
 }
+main p.title {
+  position: relative;
+  font-size: var(--font-maximum);
+  line-height: 1.2;
+}
+main p.title strong {
+  font-weight: bold;
+  color: #f00;
+}
+main p.title a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: var(--font-small);
+  font-weight: bold;
+}
 
 /* main banner (swiper) */
 main .main-banner {
@@ -281,10 +302,11 @@ main .main-banner .swiper-button-next:hover {
 
 /* notice */
 main .notice {
-  font-size: var(--font-maximum);
+  font-size: var(--font-medium);
+  padding: 80px 0 40px;
+  background-color: teal;
 }
 main .notice .inner--small {
-  background-color: #fff;
+  background-color: tomato;
   height: 660px;
-  /* border: 1px solid black; */
 }
