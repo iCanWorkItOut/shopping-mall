@@ -1,177 +1,205 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>럭키다이스</title>
-    <meta name="author" content="https://luckydice.com/iCanWorkItOut" />
-    <meta name="description" content="Board game shopping mall Website" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- 오픈그래프 -->
-    <!-- http://ogp.me/ -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="LuckyDice" />
-    <meta property="og:title" content="Pocachip's portfolio" />
-    <meta property="og:description" content="Board game shopping mall Website" />
-    <meta property="og:image" content="img/og__thumbnail.jpg" />
-    <meta property="og:url" content="" />
+<head>
+  <meta charset="UTF-8" />
+  <title>럭키다이스</title>
+  <meta name="author" content="https://luckydice.com/iCanWorkItOut" />
+  <meta name="description" content="Board game shopping mall Website" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- 트위터카드 -->
-    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:site" content="LuckyDice" />
-    <meta property="twitter:title" content="Pocachip's portfolio" />
-    <meta property="twitter:description" content="Board game shopping mall Website" />
-    <meta property="twitter:image" content="img/og__thumbnail.jpg" />
-    <meta property="twitter:url" content="" />
+  <!-- 오픈그래프 -->
+  <!-- http://ogp.me/ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LuckyDice" />
+  <meta property="og:title" content="Pocachip's portfolio" />
+  <meta property="og:description" content="Board game shopping mall Website" />
+  <meta property="og:image" content="img/og__thumbnail.jpg" />
+  <meta property="og:url" content="" />
 
-    <!-- 파비콘 -->
-    <link rel="icon" href="img/favicon.png" />
-    <!-- IE에서 파비콘 적용 (루트 경로에 존재하면 코드 생략 가능)
+  <!-- 트위터카드 -->
+  <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="LuckyDice" />
+  <meta property="twitter:title" content="Pocachip's portfolio" />
+  <meta property="twitter:description" content="Board game shopping mall Website" />
+  <meta property="twitter:image" content="img/og__thumbnail.jpg" />
+  <meta property="twitter:url" content="" />
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="img/favicon.png" />
+  <!-- IE에서 파비콘 적용 (루트 경로에 존재하면 코드 생략 가능)
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
-    <!-- 스마트폰에서 적용 -->
-    <link rel="apple-touch-icon" href="img/favicon.png" />
+  <!-- 스마트폰에서 적용 -->
+  <link rel="apple-touch-icon" href="img/favicon.png" />
 
-    <!-- 구글폰트 -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- 구글폰트 -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Font Awesome 5 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="library/swiper-bundle.min.css" />
-    <script defer src="library/swiper-bundle.min.js"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="library/swiper-bundle.min.css" />
+  <script defer src="library/swiper-bundle.min.js"></script>
 
-    <!-- CSS -->
-    <!-- 브라우저 스타일 초기화(Reset) : reset.css 파일 대체 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
+  <!-- CSS -->
+  <!-- 브라우저 스타일 초기화(Reset) : reset.css 파일 대체 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
 
-    <!-- Script -->
-    <script defer src="js/swiper.js"></script>
-  </head>
+  <!-- Script -->
+  <script defer src="js/swiper.js"></script>
+</head>
 
-  <body>
-    <div class="body__container">
-      <!-- HEADER -->
-      <header id="header" class="section">
-        <div class="inner--big clearfix">
-          <nav class="gnb float--left">
-            <div class="logo">
-              <a href="">럭키다이스</a>
-            </div>
+<body>
+  <div class="body__container">
 
-            <ul class="gnb__product">
-              <li>
-                <div class="product-menu dropdown">
-                  <span class="category">카테고리</span>
-                  <ul class="lnb__product dropdown-content">
-                    <a href="#" class="all-product"><li>전체 상품</li></a>
-                    <a href="#" class="strategy"><li>전략</li></a>
-                    <a href="#" class="party"><li>파티</li></a>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="#" class="product-menu new-product">신상품</a></li>
-              <li><a href="#" class="product-menu popular-product">인기상품</a></li>
-              <li><a href="#" class="product-menu award-winning">수상작</a></li>
-            </ul>
-
-            <ul class="gnb__bulletin-board">
-              <li>
-                <div class="bbs dropdown">
-                  <span class="community">커뮤니티</span>
-                  <ul class="lnb__bbs dropdown-content">
-                    <a href="#"> <li>전체</li> </a>
-                    <a href="#"> <li>공지사항</li> </a>
-                    <a href="#"> <li>자유 게시판</li> </a>
-                    <a href="#"> <li>리뷰 및 후기</li> </a>
-                    <a href="#"> <li>질문과 답변</li> </a>
-                    <a href="#"> <li>모임 게시판</li> </a>
-                    <a href="#"> <li>중고장터</li> </a>
-                  </ul>
-                </div>
-              </li>
-
-              <li><a href="#" class="bbs noitce">공지사항</a></li>
-            </ul>
-          </nav>
-
-          <nav class="gnb float--right">
-            <ul id="member-menu" class="gnb__member-menu">
-              <li><a href="#" class="member-menu--logout login">로그인</a></li>
-              <li><a href="#" class="member-menu--logout sign-up">회원가입</a></li>
-              <li><a href="#" class="member-menu--login logout hidden">로그아웃</a></li>
-              <li><a href="#" class="member-menu customer-service">고객센터</a></li>
-              <li><a href="#" class="member-menu shopping-basket" title="장바구니"></a></li>
-              <li><a href="#" class="member-menu my-page" title="마이페이지"></a></li>
-            </ul>
-
-            <form id="search-form" method="POST" action="">
-              <input type="text" id="search" class="input--text" placeholder="어떤 보드게임을 찾고 계세요?" />
-              <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-          </nav>
-        </div>
-      </header>
-
-      <!-- MAIN -->
-      <!-- main banner (Swiper 사용)-->
-      <main id="main" class="section">
-        <section class="section main-banner">
-          <div class="swiper-container swiper-container--main-banner">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/9.jpg" alt="'디센트' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/8.jpg" alt="'오쓰' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/7.jpg" alt="'아컴 호러' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/6.jpg" alt="'카르카손' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/5.jpg" alt="'카탄' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/4.jpg" alt="'테라포밍 마스' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/3.jpg" alt="'사이드' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/2.jpg" alt="'반지의 제왕' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/1.jpg" alt="'서스펙트 게임' 이미지를 지원하지 않습니다." /></a>
-              </li>
-              <li class="swiper-slide">
-                <a href="#"><img src="img/banner/0.jpg" alt="'광기의 저택' 이미지를 지원하지 않습니다." /></a>
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+    <!-- HEADER -->
+    <header id="header" class="fixed--top">
+      <div class="inner--big clearfix">
+        <nav class="gnb float--left">
+          <div class="logo">
+            <a href="">럭키다이스</a>
           </div>
-        </section>
-        
-        <!-- notice -->
-        <section class="section notice">
-          <div class="inner--small"></div>
-        </section>
+
+          <ul class="gnb__product">
+            <li>
+              <div class="product-menu dropdown">
+                <span class="category">카테고리</span>
+                <ul class="lnb__product dropdown-content">
+                  <a href="#" class="all-product">
+                    <li>전체 상품</li>
+                  </a>
+                  <a href="#" class="strategy">
+                    <li>전략</li>
+                  </a>
+                  <a href="#" class="party">
+                    <li>파티</li>
+                  </a>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#" class="product-menu new-product">신상품</a></li>
+            <li><a href="#" class="product-menu popular-product">인기상품</a></li>
+            <li><a href="#" class="product-menu award-winning">수상작</a></li>
+          </ul>
+
+          <ul class="gnb__bulletin-board">
+            <li>
+              <div class="bbs dropdown">
+                <span class="community">커뮤니티</span>
+                <ul class="lnb__bbs dropdown-content">
+                  <a href="#">
+                    <li>전체</li>
+                  </a>
+                  <a href="#">
+                    <li>공지사항</li>
+                  </a>
+                  <a href="#">
+                    <li>자유 게시판</li>
+                  </a>
+                  <a href="#">
+                    <li>리뷰 및 후기</li>
+                  </a>
+                  <a href="#">
+                    <li>질문과 답변</li>
+                  </a>
+                  <a href="#">
+                    <li>모임 게시판</li>
+                  </a>
+                  <a href="#">
+                    <li>중고장터</li>
+                  </a>
+                </ul>
+              </div>
+            </li>
+
+            <li><a href="#" class="bbs noitce">공지사항</a></li>
+          </ul>
+        </nav>
+
+        <nav class="gnb float--right">
+          <ul id="member-menu" class="gnb__member-menu">
+            <li><a href="#" class="member-menu--logout login">로그인</a></li>
+            <li><a href="#" class="member-menu--logout sign-up">회원가입</a></li>
+            <li><a href="#" class="member-menu--login logout hidden">로그아웃</a></li>
+            <li><a href="#" class="member-menu customer-service">고객센터</a></li>
+            <li><a href="#" class="member-menu shopping-basket" title="장바구니"></a></li>
+            <li><a href="#" class="member-menu my-page" title="마이페이지"></a></li>
+          </ul>
+
+          <form id="search-form" method="POST" action="">
+            <input type="text" id="search" class="input--text" placeholder="어떤 보드게임을 찾고 계세요?" />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </nav>
       </div>
+      <!-- // inner--big -->
+    </header>
+
+    <!-- MAIN -->
+    <main id="main">
+
+      <!-- main-banner (Swiper 사용)-->
+      <section class="main-banner">
+        <div class="swiper-container swiper-container--main-banner">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/9.jpg" alt="'디센트' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/8.jpg" alt="'오쓰' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/7.jpg" alt="'아컴 호러' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/6.jpg" alt="'카르카손' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/5.jpg" alt="'카탄' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/4.jpg" alt="'테라포밍 마스' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/3.jpg" alt="'사이드' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/2.jpg" alt="'반지의 제왕' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/1.jpg" alt="'서스펙트 게임' 이미지를 지원하지 않습니다." /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/banner/0.jpg" alt="'광기의 저택' 이미지를 지원하지 않습니다." /></a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- // swiper-container -->
+      </section>
+      <!-- // main-banner -->
+
+      <!-- notice -->
+      <section class="notice">
+        <div class="inner--small">
+
+        </div>
+      </section>
+      <!-- // notice -->
     </main>
-    </body>
-    </html>
+  </div>
+  <!-- // body__container -->
+</body>
+
+</html>
