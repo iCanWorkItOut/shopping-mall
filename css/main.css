@@ -235,7 +235,6 @@ header .gnb__member-menu {
 /* MAIN */
 /* common--main */
 #main {
-  /* padding-top: 78px; */
   background-color: var(--background-color);
 }
 main .inner--small > p.title {
@@ -266,11 +265,6 @@ main .main-banner {
 main .main-banner .swiper-container {
   width: 100%;
   height: 580px;
-}
-main .main-banner .swiper-slide {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 main .main-banner .swiper-slide img {
   display: block;
@@ -361,8 +355,6 @@ main .noti-info .noti-date::before {
 main .recommended-product {
   padding-bottom: 30px;
 }
-main .recommended-product .inner--small {
-}
 main .recommended-product .recommend-list {
   display: grid;
   width: 100%;
@@ -391,4 +383,23 @@ main .recommend-list__item .reco-item-tag-list__item {
 main .mid-banner .inner--small {
   padding: 30px 0;
   border-top: 2px dotted var(--border-color);
+}
+main .mid-banner img {
+  width: 100%;
+}
+
+/* bottom-banner */
+main .bottom-banner {
+  padding-bottom: 30px;
+}
+main .bottom-banner .swiper-container {
+  width: 100%;
+}
+main .bottom-banner .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+main .bottom-banner .swiper-pagination {
+  bottom: 40px;
+  font-size: var(--font-larger);
 }
