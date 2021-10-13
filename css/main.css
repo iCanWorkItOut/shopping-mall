@@ -95,7 +95,6 @@ a {
 }
 
 /* HEADER */
-/* common--header */
 #header.fixed--top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
@@ -115,10 +114,10 @@ header .gnb {
 }
 
 /* logo */
-header .logo {
+header .gnb .logo {
   margin-right: 30px;
 }
-header .logo a {
+header .gnb .logo a {
   display: block;
   background: url('../img/luckydice--60x50.png');
   width: 60px;
@@ -127,7 +126,7 @@ header .logo a {
 }
 
 /* gnb__product */
-header .gnb__product {
+header .gnb .gnb__product {
   display: flex;
   border-right: 1px solid var(--border-color);
   padding-right: 10px;
@@ -148,7 +147,7 @@ header .gnb__product .product-menu:hover {
 }
 
 /* gnb__bulletin-board */
-header .gnb__bulletin-board {
+header .gnb .gnb__bulletin-board {
   display: flex;
   padding-left: 10px;
   align-items: center;
@@ -168,7 +167,7 @@ header .gnb__bulletin-board .bbs:hover {
 }
 
 /* gnb__member-menu */
-header .gnb__member-menu {
+header .gnb .gnb__member-menu {
   display: flex;
   height: 100%;
   align-items: center;
@@ -402,4 +401,57 @@ main .bottom-banner .swiper-slide img {
 main .bottom-banner .swiper-pagination {
   bottom: 40px;
   font-size: var(--font-larger);
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  font-size: var(--font-smaller);
+  color: #fff;
+}
+footer .inner--small {
+  padding: 100px 0;
+}
+
+/* footer--top */
+footer .footer--top {
+  padding-bottom: 15px;
+  border-bottom: 1.5px solid var(--border-color);
+}
+footer .footer--top .info-menu {
+  display: flex;
+  align-items: center;
+}
+footer .info-menu .logo {
+  width: 80px;
+  margin-right: 35px;
+}
+footer .info-menu .info--list {
+  display: flex;
+  font-size: var(--font-medium);
+}
+footer .info-menu .info--item {
+  margin-right: 20px;
+}
+footer .footer--top .kbg--link {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  color: #fff;
+}
+footer .kbg--link img {
+  height: 30px;
+}
+
+/* footer--bottom */
+footer .footer--bottom {
+  padding: 40px 0;
+  background-color: tomato;
+}
+footer .footer--bottom .company-info {
+  font-size: var(--font-small);
+  line-height: 1.3;
+}
+footer .company-info span {
+  margin-right: 10px;
 }
